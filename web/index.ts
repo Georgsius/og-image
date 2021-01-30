@@ -122,7 +122,6 @@ const Toast = ({ show, message }: ToastProps) => {
 
 const themeOptions: DropdownOption[] = [
     { text: 'Light', value: 'light' },
-    { text: 'Dark', value: 'dark' },
 ];
 
 const fileTypeOptions: DropdownOption[] = [
@@ -143,16 +142,10 @@ const markdownOptions: DropdownOption[] = [
 
 const imageLightOptions: DropdownOption[] = [
     { text: 'ED', value: 'https://dev.e-ecolog.ru/favicon.svg' },
-    { text: 'Vercel', value: 'https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-black.svg' },
-    { text: 'Next.js', value: 'https://assets.vercel.com/image/upload/front/assets/design/nextjs-black-logo.svg' },
-    { text: 'Hyper', value: 'https://assets.vercel.com/image/upload/front/assets/design/hyper-color-logo.svg' },
 ];
 
 const imageDarkOptions: DropdownOption[] = [
     { text: 'ED', value: 'https://dev.e-ecolog.ru/favicon.svg' },
-    { text: 'Vercel', value: 'https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-white.svg' },
-    { text: 'Next.js', value: 'https://assets.vercel.com/image/upload/front/assets/design/nextjs-white-logo.svg' },
-    { text: 'Hyper', value: 'https://assets.vercel.com/image/upload/front/assets/design/hyper-bw-logo.svg' },
 ];
 
 const widthOptions = [
@@ -203,13 +196,13 @@ const App = (_: any, state: AppState, setState: SetState) => {
     };
     const {
         fileType = 'png',
-        fontSize = '100px',
+        fontSize = '150px',
         theme = 'light',
         md = true,
-        text = '**Hello** World',
+        text = '**Е-ДОСЬЕ**',
         images=[imageLightOptions[0].value],
-        widths=[],
-        heights=[],
+        widths=[500],
+        heights=[500],
         showToast = false,
         messageToast = '',
         loading = true,
