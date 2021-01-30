@@ -122,6 +122,7 @@ const Toast = ({ show, message }: ToastProps) => {
 
 const themeOptions: DropdownOption[] = [
     { text: 'Light', value: 'light' },
+    { text: 'Dark', value: 'dark' },
 ];
 
 const fileTypeOptions: DropdownOption[] = [
@@ -196,13 +197,13 @@ const App = (_: any, state: AppState, setState: SetState) => {
     };
     const {
         fileType = 'png',
-        fontSize = '150px',
+        fontSize = '100px',
         theme = 'light',
         md = true,
         text = '**Е-ДОСЬЕ**',
         images=[imageLightOptions[0].value],
-        widths=[500],
-        heights=[500],
+        widths=[],
+        heights=[],
         showToast = false,
         messageToast = '',
         loading = true,
